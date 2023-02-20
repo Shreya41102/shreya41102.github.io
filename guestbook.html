@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guest book</title>
+</head>
+<body>
+    <h1>My Guest Book</h1>
+    <p><i>Please sign my guest book. Thanks!</i><br><br>
+        <form onsubmit="validateform()">
+            <label id="personname">What is your name?</label>
+    <input type="text"  placeholder="" ><br><br>
+    <label>What is your e-mail address?</label>
+    <input type="text"  placeholder="" id="emailid"><br><br>
+    <b>Style of outfits?</b>
+    <label for="one">
+        <input type="checkbox" value ="yes" name="canteen" id="one">I really like western outfits<br></label>
+        <label for="two">
+            <input type="checkbox" value="no" name="canteen" id="two"> I really like ethnic outfits<br>
+        </label>
+        <label for="three">
+            <input type="checkbox" value="to" name="canteen" id="three"> I like them both equally.<br>
+        </label>
+        <label for="four">
+            <input type="checkbox" value="my" name="canteen" id="four"> I dont have a particular preferene.<br>
+        </label>
+        <br>
+        <b> your fabric preference</b>
+        <label for="sectionida">
+            <input type="radio"  value= "Section A" name="section" id="sectionida">Cotton<br></label>
+            <label for="sectionidb">
+                <input type="radio" value="Section B" name="section" id="sectionidb">Linen.<br></label>
+                <label for="sectionidc">
+                    <input type="radio" value="Section C" name="section" id="sectionidc">Denim</label><br>
+                    <label for="sectionidd">
+                        <input type="radio"  value= "Section D" name="section" id="sectionidd">Tpolyester<br></label><br>
+                        <b>Where do u get  <br>fashion inspiration from</b>
+                        <select name="multiple" multiple="multiple">
+                            <option selected ="selected">Influencers</option>
+                            <option selected ="selected">Family and friends</option>
+                            <option selected ="selected">Just try whatever I like</option>
+                        </select><br>
+                      
+                            <b>Any Suggestions?</b>
+                            <select id="car" name="car">
+                                <option value="no car">Couldn't be better</option>
+                                </select>
+                                <br>
+                                <b>Feel free to type more praise ,gift offers,etc.below:</b>
+                                <input type="text"  placeholder="" width="200" height="30"><br>
+                                <br>
+                                <input type="submit"  value="submit">
+                                <input type="button" value="refresh">
+
+
+        </form>
+
+
+</p>
+<script>
+    var name= document.getElementById(personname);
+    function validateform(){
+        alert(name +"Hi to you!");
+    }
+</script>
+    
+</body>
+</html>
